@@ -23,18 +23,24 @@ const users = [
 function getUserAverageAge(users) {
 	let total = 0;
 	for (let i = 0; i < users.length; i++) {
-		console.log(users[i].age)
+		// console.log(users[i].age)
 		total += users[i].age
 	}
-	console.log(total)
+	console.log(`Visų users amžiaus vidurkis ${total / users.length} arba ~ ${Math.ceil(total / users.length)} `)
 };
 
 getUserAverageAge(users);
 
 
+let newUsersArr = []
 
 function getUsersNames(users) {
-
+	for (let i = 0; i < users.length; i++) {
+		let result = users.map(({ name }) => name)
+		console.log(result)
+		return newUsersArr
+	}
 }
-
 getUsersNames(users)
+
+
