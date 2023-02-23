@@ -25,8 +25,10 @@ function getUserAverageAge(users) {
 	for (let i = 0; i < users.length; i++) {
 		// console.log(users[i].age)
 		total += users[i].age
+		//reikejo panaudoti return total
+
 	}
-	console.log(`Visų users amžiaus vidurkis ${total / users.length} arba ~ ${Math.ceil(total / users.length)} `)
+	//console.log(`Visų users amžiaus vidurkis ${total / users.length} arba ~ ${Math.ceil(total / users.length)} `)
 };
 
 getUserAverageAge(users);
